@@ -1,0 +1,6 @@
+server_host = 127.0.0.1
+search_base = ou=empleados,ou=usuario,dc=maizchino,dc=com
+bind = no
+timeout = 2
+query_filter = mail=%u@churrito.com
+result_attribute = mailbox
