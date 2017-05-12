@@ -28,7 +28,7 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # information on enabling SSL in the smtp client.
 
 smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
-myhostname = localhost
+myhostname = www.maizchino.com
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 myorigin = /etc/mailname
@@ -40,9 +40,3 @@ mailbox_size_limit = 0
 recipient_delimiter = +
 inet_interfaces = all
 html_directory = /usr/share/doc/postfix/html
-
-virtual_mailbox_domains = /etc/postfix/vhosts.txt
-virtual_mailbox_base = /home/inmortal
-virtual_mailbox_maps = hash:/etc/porstfix/vmaps.txt
-virtual_uid_maps = static:2017
-virtual_gid_maps = staic:2017
